@@ -90,27 +90,18 @@ while choice!=6:
     choice=int(input('Выберите пункт действия: '))
     if choice==1:
         show_contact()
-        choice_main_menu=input('Вернуться в главное меню? (да/нет): ')
-        if choice_main_menu=='да':
-            main_menu()
     if choice==2:
         add_contact()
-        choice_main_menu=input('Вернуться в главное меню? (да/нет): ')
-        if choice_main_menu=='да':
-            main_menu()
     if choice==3:
         find_contact() 
-        choice_main_menu=input('Вернуться в главное меню? (да/нет): ')
-        if choice_main_menu=='да':
-            main_menu()
     if choice==4:
         change_contact()
-        choice_main_menu=input('Вернуться в главное меню? (да/нет): ')
-        if choice_main_menu=='да':
-            main_menu()
     if choice==5:
         delete_contact()
-        choice_main_menu=input('Вернуться в главное меню? (да/нет): ')
-        if choice_main_menu=='да':
-            main_menu()
-print("Пока пока!")
+    if choice==6:
+        print("Пока пока!")
+        break
+    choice_main_menu=input('Вернуться в главное меню? (да/нет): ')
+    if choice_main_menu=='да':
+        main_menu()
+    
